@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TwoSum",
+            "request": "launch",
+            "mainClass": "TwoSum",
+            "projectName": "JavaDSA_d9f4d291"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongConsecutive",
+            "request": "launch",
+            "mainClass": "Array.LongConsecutive",
+            "projectName": "JavaDSA_d9f4d291"
+        },
+        {
+            "type": "java",
+            "name": "Launch NotEqual",
+            "request": "launch",
+            "mainClass": "Normalprgms.NotEqual",
+            "projectName": "JavaDSA_d9f4d291"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrimeOrPrefectSquare",
+            "request": "launch",
+            "mainClass": "Normalprgms.PrimeOrPrefectSquare",
+            "projectName": "JavaDSA_d9f4d291"
+        },
+        {
+            "type": "java",
+            "name": "Launch LinkedListRotate",
+            "request": "launch",
+            "mainClass": "LinkedList.LinkedListRotate",
+            "projectName": "JavaDSA_d9f4d291"
+        },
+        {
+            "type": "java",
+            "name": "Launch InsertionSort",
+            "request": "launch",
+            "mainClass": "Sorting.InsertionSort",
+            "projectName": "JavaDSA_d9f4d291"
+        },
+        {
+            "type": "java",
             "name": "Launch Project3",
             "request": "launch",
             "mainClass": "Array.Project3",

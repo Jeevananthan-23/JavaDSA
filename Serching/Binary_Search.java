@@ -1,4 +1,4 @@
-package Trees;
+package Serching;
 
 import java.util.Scanner;
 

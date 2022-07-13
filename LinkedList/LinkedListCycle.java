@@ -61,21 +61,22 @@ public class LinkedListCycle {
      * }
      *
      */
-    static boolean hasCycle(SinglyLinkedListNode head) {
-if(head==null) return false;
+    static int hasCycle(SinglyLinkedListNode head) {
+
     SinglyLinkedListNode walker = head;
     SinglyLinkedListNode runner = head;
     while(runner.next!=null && runner.next.next!=null) {
+       runner = runner.next.next; 
         walker = walker.next;
-        runner = runner.next.next;
-        if(walker==runner) return true;
+       
+        // if(walker==runner) return true;
     }
-    return false;
+    return walker.data;
 
     }
 
     public static void main(String[] args) throws IOException{
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+       
 Scanner scanner=new Scanner(System.in);
         int tests = scanner.nextInt();
 
@@ -107,13 +108,10 @@ Scanner scanner=new Scanner(System.in);
       
       		temp.next = extra;
 
-            boolean result = hasCycle(llist.head);
+           int   result = hasCycle(llist.head);
+           System.out.println(result);
 
-            bufferedWriter.write(String.valueOf(result ? 1 : 0));
-            bufferedWriter.newLine();
         }
-
-        bufferedWriter.close();
 
         scanner.close();
     }

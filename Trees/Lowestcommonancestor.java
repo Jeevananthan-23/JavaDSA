@@ -66,4 +66,77 @@ class Lowestcommonancestor {
         Node ans = lca(root,v1,v2);
         System.out.println(ans.data);
     }	
+
+
+//rightsideview of a binary tree with depth first serarch
+//https://www.geeksforgeeks.org/rightside-view-binary-tree-2/
+public List<Integer> rightSideView(Node root) {
+    List<Integer> list = new ArrayList<>();
+    if(root == null){
+        return list;
+    }
+    Queue<Node> q = new LinkedList<>();
+    q.add(root);
+    while(!q.isEmpty()){
+        Node cur = q.remove();
+        if(cur == null){
+            if(!q.isEmpty()){
+                q.add(null);
+            }
+        }else{
+            if(q.isEmpty()){
+                list.add(cur.data);
+            }
+            if(cur.left != null){
+                q.add(cur.left);
+            }
+            if(cur.right != null){
+                q.add(cur.right);
+            }
+        }
+    }
+    return list;
 }
+
+
+// DFS to find the node with given data in the tree
+public Node dFS(Node root, int data){
+    if(root == null){
+        return null;
+    }
+    if(root.data == data){
+        return root;
+    }
+    Node left = dFS(root.left,data);
+    if(left != null){
+        return left;
+    }
+    Node right = dFS(root.right,data);
+    if(right != null){
+        return right;
+    }
+    return null;
+}
+//BFS to find the node with given data in the tree
+public Node BFS(Node root, int data){
+    if(root == null){
+        return null;
+    }
+    Queue<Node> q = new LinkedList<>();
+    q.add(root);
+    while(!q.isEmpty()){
+        Node cur = q.remove();
+        if(cur.data == data){
+            return cur;
+        }
+        if(cur.left != null){
+            q.add(cur.left);
+        }
+        if(cur.right != null){
+            q.add(cur.right);
+        }
+    }
+    return null;
+}
+}
+

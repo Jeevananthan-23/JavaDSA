@@ -126,17 +126,13 @@ class BinarySearchTree {
 		in.close();
 		// print inorder traversal of the BST
 		tree.inorder();
-		tree.findmin(root);
-		tree.findmax(root);
-		tree.findheight(root);
-		System.out.println();
-		if (tree.isBST()) 
-			System.out.println("IS BST"); 
-	else{System.out.println("Not a BST"); }
-		System.out.println("The min val in the tree "+tree.findmin(root));
-		System.out.println("The max val in the tree "+tree.findmax(root));
-		System.out.println("The Height of tree "+tree.findheight(root));
-		System.out.println("CountLeaves in tree "+tree.countLeaves(root));
+		// tree.findmin(root);
+		// tree.findmax(root);
+		int res=tree.findheight(root);
+		// System.out.println();
+		// boolean res=tree.isBST();
+		System.out.println(res);
+		// 3
 
 	}
 	int countLeaves(Node root)
@@ -147,7 +143,7 @@ class BinarySearchTree {
 }
 
 
-public int findmin(Node root) {
+	public int findmin(Node root) {
 		if(root==null){
 			return -1;
 		}
