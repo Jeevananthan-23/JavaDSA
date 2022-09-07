@@ -1,3 +1,5 @@
+package Array;
+
 //Process Scheduling with n=5(number of processors and size of ability[]) ability=[3,1,7,2,4] processes=15 find the minimum time to complete all the processes
 public class ProcessScheduling {
     public static void main(String[] args) {
