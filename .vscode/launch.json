@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch SubstringInWords",
+            "request": "launch",
+            "mainClass": "SubstringInWords",
+            "projectName": "JavaDSA_d9f4d291"
+        },
+        {
+            "type": "java",
+            "name": "Launch SubstringWindow",
+            "request": "launch",
+            "mainClass": "SubstringWindow",
+            "projectName": "JavaDSA_d9f4d291"
+        },
+        {
+            "type": "java",
+            "name": "Launch BinaryTreeWithFactors",
+            "request": "launch",
+            "mainClass": "BinaryTreeWithFactors",
+            "projectName": "JavaDSA_d9f4d291"
+        },
+        {
+            "type": "java",
+            "name": "Launch StackCube",
+            "request": "launch",
+            "mainClass": "StackCube",
+            "projectName": "JavaDSA_d9f4d291"
+        },
+        {
+            "type": "java",
+            "name": "Launch FindAnagram",
+            "request": "launch",
+            "mainClass": "FindAnagram",
+            "projectName": "JavaDSA_d9f4d291"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongCharReplacement",
+            "request": "launch",
+            "mainClass": "LongCharReplacement",
+            "projectName": "JavaDSA_d9f4d291"
+        },
+        {
+            "type": "java",
             "name": "Launch Project3",
             "request": "launch",
             "mainClass": "Array.Project3",

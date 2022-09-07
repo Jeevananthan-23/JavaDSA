@@ -22,6 +22,8 @@ import java.util.Scanner;
            myList.add(1, "Orange");
            myList.add(2,"Pinapple");
            System.out.println("Print All the Objects:");
+String[] words={"Jeeva","Badeye","Pollathavan","Jeevananthan"};
+        int vav=  words[0].length();
            for(String s:myList){
            System.out.println(s);
            }

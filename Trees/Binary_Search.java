@@ -1,6 +1,7 @@
 package Trees;
 
 import java.util.Scanner;
+import java.util.*;
 
 public class Binary_Search {
 public static int search(int[] ar, int n, int ele) {
@@ -14,8 +15,6 @@ while(l<=r){
     if (ar[m] == ele) 
     return m; 
     
-
-
 if (ar[m] < ele) 
     //l = m + 1; 
     search(ar,m+1,l);
