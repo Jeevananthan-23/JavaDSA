@@ -4,11 +4,11 @@
 /JavaApplication2
 /new
 /Newimp
-/.vscode
-/lib
+.vscode
+lib
 /Online Education Program
 .fake
 .ionide
-.backup
-.package-lock.json
-.settings.json
+backup
+package-lock.json
+settings.json
