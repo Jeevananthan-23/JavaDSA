@@ -87,16 +87,9 @@ In addition, you should have a good grasp on common algorithms such as:
 - Binary search
 - Recursion
 
-### Regex ###
-```python 
-import re
-
-# Use '[^a-zA-Z0-9]' for only alphanumeric
-string = re.sub('[^a-zA-Z0-9]', '', string)
-```
-
 
 ## Important Links:
+-[Important-and-Useful-links-from-all-over-the-LeetCode](https://leetcode.com/discuss/general-discussion/665604/Important-and-Useful-links-from-all-over-the-LeetCode)
 - [14 Patterns to Ace Any Coding Interview Question](https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed)
 - [Grokking the Coding Interview: Patterns for Coding Questions](https://www.educative.io/courses/grokking-the-coding-interview/Y5zDWlVRz2p)
 - [Cracking the Coding Interview PDF](https://github.com/chaudharyachint08/Self-Learning/blob/master/BOOKS/DSA%20%26%20Competitive%20Programming/Cracking-the-Coding-Interview-6th-Edition-189-Programming-Questions-and-Solutions.pdf)
